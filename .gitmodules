@@ -1,0 +1,18 @@
+[submodule "api-gateway"]
+	path = api-gateway
+	url = https://github.com/HLoc26/scheduler-api-gateway.git
+[submodule "discovery-service"]
+	path = discovery-service
+	url = https://github.com/HLoc26/scheduler-discovery.git
+[submodule "common"]
+	path = common
+	url = https://github.com/HLoc26/scheduler-common.git
+[submodule "auth-service"]
+	path = auth-service
+	url = https://github.com/HLoc26/scheduler-auth.git
+[submodule "user-service"]
+	path = user-service
+	url = https://github.com/HLoc26/scheduler-user.git
+[submodule "school-service"]
+	path = school-service
+	url = https://github.com/HLoc26/scheduler-school.git
