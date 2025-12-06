@@ -92,10 +92,8 @@ cd ./school-service
 The services should be started in a specific order to ensure proper registration and discovery.
 
 1.  **Set up environment variables**: Create a `.env` file with keys in `.env.example`.
-2.  **Start `docker-compose.yaml`**: Start Kafka and MySQL database with `docker-compose up -d`.
-3.  **Start `discovery-service`**: This should be the first service to start.
-4.  **Start other services**: Once the discovery service is running, you can start the `auth-service`, `user-service`, `school-service`.
-5.  **Start `api-gateway`**: The gateway should be started after the other services it depends on are up and running.
+2.  **Start `docker-compose.yaml`**: Start Kafka, MySQL database, `discovery-service`, and `api-gateway` with `docker-compose up -d`.
+3.  **Start other services**: Once the discovery service is running, you can start the `auth-service`, `user-service`, `school-service`.
 
 To run a service, navigate to its directory and use the Spring Boot Maven plugin:
 
