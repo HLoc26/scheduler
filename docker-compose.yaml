@@ -20,3 +20,19 @@ services:
       - .env
     ports:
       - "3300:3306"
+
+  discovery:
+    build:
+      context: ./discovery-service
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+
+  api-gateway:
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    depends_on:
+      - discovery
+    ports:
+      - "8080:8080"
